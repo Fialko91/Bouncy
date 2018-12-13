@@ -1,30 +1,470 @@
-@import "bourbon"
+//@import "bourbon"
 @import "fonts"
 @import "libs"
 @import "vars"
 @import "base"
 
+// -------------------- header --------------------
+.header_wrapper
+  background: url("../img/top bc.png") no-repeat center
+  background-size: cover
+  height: 100vh
+  width: 100%
+  max-width: 100%
+  position: relative
+  .top_nav
+    display: flex
+    justify-content: space-between
+    padding-top: 40px
+    flex-wrap: wrap
+    position: relative
+    .container_logo
+      display: flex
+      align-items: center
+    .toolbar
+      position: absolute
+      right: 10px
+      &_ul
+        display: flex
+        justify-content: space-between
+        max-width: 100%
+        .toolbar_li
+          padding: 0 1px
+          &_link
+            color: white
+            text-decoration: none
+            font-size: 16px
+            font-weight: 400
+            line-height: 12px
+            padding: 10px 23px
+            outline: none
+            border: 1px solid transparent
+            border-radius: 23px
+            transition: all .25s
+            font-family: "OpenSans", sans-serif
+            &:hover
+              border: 1px solid #ffffff
+  .header_container_text
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%)
+    max-width: 606px
+    text-align: center
+    .header_text_name
+      color: white
+      font-family: "SourceSansProLight", sans-serif
+      font-size: 35px
+      font-weight: 300
+      line-height: 70px
+      text-transform: uppercase
+      letter-spacing: 10px
+    .header_text_text
+      color: white
+      font-family: "OpenSans", sans-serif
+      font-size: 16px
+      font-weight: 400
+      line-height: 28px
+
+
+    .toolbar_btn_container
+      display: none
+// -------------------- this_in_bouncy --------------------
+.this_in_bouncy_wrapper
+  .container_main
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    //padding-top: 110px
+    //padding-bottom: 70px
+    padding: 110px 0 70px
+    max-width: 833px
+    margin: 0 auto
+    .container_text_this
+      max-width: 460px
+      .this_name
+        color: #333b46
+        font-family: "SourceSansProLight", sans-serif
+        font-size: 20px
+        font-weight: 300
+        line-height: 12px
+        text-transform: uppercase
+        padding-bottom: 50px
+      .this_text
+        color: #81868e
+        font-family: "OpenSans", sans-serif
+        font-size: 14px
+        font-weight: 400
+        line-height: 25px
+        padding-bottom: 35px
+      .this_btn
+        color: #333b46
+        font-family: "OpenSans", sans-serif
+        font-size: 16px
+        font-weight: 400
+        line-height: 12px
+        padding: 13px 30px
+        background-color: transparent
+        border: 1px solid #000000
+        outline: none
+        text-transform: capitalize
+        border-radius: 50px
+        transition: all .25s
+        &:hover
+          transform: scale(1.1)
+
+// -------------------- about --------------------
+.about_wrapper
+  padding-top: 80px
+  padding-bottom: 100px
+  .about_container
+    display: flex
+    flex-direction: column
+    justify-content: center
+    &_name
+      max-width: 460px
+      justify-content: center
+      text-align: center
+      margin: 0 auto
+      padding-bottom: 65px
+      .about_name
+        padding-bottom: 45px
+      .about_name_text
+        color: #81868e
+        font-family: "OpenSans", sans-serif
+        font-size: 14px
+        font-weight: 400
+        line-height: 25px
+    .tabs_wrapper
+      .tabs
+        display: flex
+        max-width: 232px
+        justify-content: space-around
+        margin: 0 auto
+        &_item
+          display: flex
+          background-color: #81868e
+          align-items: center
+          justify-content: center
+          width: 53px
+          height: 53px
+          border-radius: 50%
+          cursor: pointer
+      .active
+        background-color: $green
+    .tab_content
+      max-width: 1000px
+      margin: 0 auto
+      .tab_item
+
+        .tab_content_name
+          color: #464646
+          font-family: "OpenSans", sans-serif
+          font-size: 20px
+          font-weight: 400
+          line-height: 125px
+          text-transform: capitalize
+        .tab_content_wrapper
+          display: flex
+          flex-wrap: wrap
+          justify-content: space-between
+          .tab_content_wrapper_left_block
+            max-width: 322px
+            padding-bottom: 30px
+            font-size: 16px
+            line-height: 28px
+            font-family: "OpenSans", sans-serif
+            .left_block_span_1
+              color: $green
+              font-weight: bold
+            .left_block_span_2
+              font-weight: bold
+          .tabs_content_wrapper_right_block
+            max-width: 568px
+            line-height: 28px
+            font-family: "OpenSans", sans-serif
+            font-size: 16px
+            .right_block_span_1, .right_block_span_3
+              font-weight: bold
+            .right_block_span_2
+              color: $green
+              font-weight: bold
+
+
+
+
+// -------------------- feature_projects --------------------
+.feature_projects_wrapper
+  padding-top: 80px
+  .feature_projects_text_container
+    display: flex
+    justify-content: center
+    text-align: center
+    flex-direction: column
+    padding-bottom: 65px
+    .feature_projects_name
+      padding-bottom: 45px
+    .feature_projects_text
+      color: #81868e
+      font-family: "OpenSans", sans-serif
+      font-size: 14px
+      font-weight: 400
+      line-height: 25px
+  .feature_projects_main_container
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    .feature_projects_images_container
+      position: relative
+      //overflow: hidden
+      .feature_projects_images
+        height: 100%
+        width: 100%
+        object-fit: cover
+      .overlay
+        background-color: rgba(0, 0, 0, 0)
+        z-index: 99
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        cursor: pointer
+        transition: all .35s
+        &_text
+          position: absolute
+          top: 50%
+          left: 50%
+          transform: translate(-50%, -50%)
+          color: transparent
+          text-decoration: none
+          font-family: "SourceSansProLight", sans-serif
+          font-size: 20px
+          font-weight: 300
+          line-height: 12px
+          text-transform: uppercase
+          transition: all .35s
+      &:hover
+        .overlay
+          background-color: rgba(0, 0, 0, 0.7)
+          &_text
+            color: white
+  .feature_projects_bottom
+    background: url("../img/Rectangle4.png") no-repeat center
+    background-size: cover
+    width: 100%
+    max-width: 100%
+    height: 113px
+    .feature_projects_container_bottom
+      display: flex
+      justify-content: space-between
+      flex-wrap: wrap
+      padding: 40px 10px
+      .feature_projects_bottom_text
+        color: white
+        font-family: "OpenSans", sans-serif
+        font-size: 20px
+        line-height: 25px
+        &_span
+          font-weight: 700
+      .feature_projects_bottom_btn
+        color: white
+        font-family: "OpenSans", sans-serif
+        font-size: 16px
+        font-weight: 400
+        line-height: 12px
+        background-color: transparent
+        outline: none
+        padding: 10px 27px
+        border: 1px solid #ffffff
+        border-radius: 23px
+        transition: all .35s
+        text-transform: capitalize
+        &:hover
+          transform: scale(1.1)
+
+// -------------------- services --------------------
+.services_wrapper
+  padding-top: 80px
+  padding-bottom: 140px
+  width: 1030px
+  .services_container
+    .services_container_name
+      display: flex
+      flex-direction: column
+      justify-content: center
+      text-align: center
+      padding-bottom: 60px
+      .services_name
+        padding-bottom: 40px
+      .services_name_text
+        color: #81868e
+        font-family: "OpenSans", sans-serif
+        font-size: 14px
+        font-weight: 400
+        line-height: 25px
+  .tabs_services_wrapper
+    display: flex
+
+    .tabs_services
+      &_item
+        display: flex
+        background-color: #81868e
+        align-items: center
+        justify-content: center
+        width: 53px
+        height: 53px
+        border-radius: 50%
+        cursor: pointer
+        margin-bottom: 15px
+        margin-right: 40px
+        outline: none
+        &:nth-child(3)
+          padding-bottom: 7px
+        &:nth-child(4)
+          padding-bottom: 3px
+    .active
+      background-color: $green
+    .tab_services_content
+      width: 100%
+      .tab_services_main
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        align-items: center
+        .tab_services_wrapper_content
+          max-width: 433px
+          .tab_services_content_name
+            color: #464646
+            font-family: "OpenSans", sans-serif
+            font-size: 20px
+            font-weight: 400
+            text-transform: capitalize
+            line-height: 50px
+          .main_text
+            color: #81868e
+            font-family: "OpenSans", sans-serif
+            font-size: 16px
+            line-height: 28px
+            font-weight: 400
+        .tab_services_diagram_container
+          max-width: 450px
+          width: 100%
+          .progress
+            position: relative
+            //display: inline-block
+            padding: 0
+            display: flex
+            justify-content: space-between
+            text-align: center
+
+          .progress > li
+            display: inline-block
+            position: relative
+            text-align: center
+            color: #93A2AC
+            font-family: "OpenSans", sans-serif
+            font-weight: 100
+
+          .progress > li:before
+            content: attr(data-name)
+            position: absolute
+            width: 100%
+            bottom: -25px
+            font-weight: 300
+            color: #81868e
+            font-family: "OpenSans", sans-serif
+            font-size: 16px
+            line-height: 25px
+            text-transform: capitalize
+          .progress > li:after
+            content: attr(data-percent)
+            position: absolute
+            width: 100%
+            top: 46%
+            left: 0
+            transform: translate(0, -50%)
+            font-size: 25px
+            text-align: center
+            &:nth-child(3)
+              content: attr(data-percent)
+              font-size: 14px
+          .progress svg
+            width: 123px
+            height: 123px
+          .progress svg:nth-child(2)
+            position: absolute
+            left: 0
+            top: 0
+            transform: rotate(-90deg)
+          .progress svg:nth-child(2) path
+            fill: none
+            stroke-width: 6
+            stroke-dasharray: 600
+            stroke: $green
+            opacity: .9
+            animation: load 5s
+@keyframes load
+  0%
+    stroke-dashoffset: 0
+// -------------------- impressed --------------------
+.impressed_wrapper
+  background: url("../img/BG.png") no-repeat center
+  background-size: cover
+  max-width: 100%
+  min-height: 392px
+  position: relative
+  //height: 100%
+  .impressed_container
+    display: flex
+    //padding: 80px 0
+    padding-bottom: 80px
+    padding-top: 80px
+    justify-content: space-between
+    position: relative
+    flex-wrap: wrap
+    .impressed_container_main
+      max-width: 600px
+      position: relative
+      &_name
+        color: #f3f3f3
+        font-family: "SourceSansProLight", sans-serif
+        font-size: 20px
+        font-weight: 300
+        line-height: 12px
+        text-transform: uppercase
+        padding-bottom: 40px
+      &_text
+        color: #b2b3b3
+        font-family: "OpenSans", sans-serif
+        font-size: 16px
+        font-weight: 400
+        line-height: 28px
+        padding-bottom: 30px
+      &_signature
+        color: #b2b3b3
+        font-size: 14px
+        line-height: 25px
+        font-weight: 700
+        text-transform: uppercase
+        .signature_role
+          font-weight: 400
+        .signature_place
+          color: #19bd9a
+          font-weight: 400
+    .impressed_container_item
+      position: absolute
+      right: 0
+      bottom: 40px
+      margin: 0 10px
+      .impressed_container_item_images
 // -------------------- Block_name --------------------
 
 
 // -------------------- Block_name --------------------
-
-
 // -------------------- Block_name --------------------
-
-
 // -------------------- Block_name --------------------
-
-
 // -------------------- Block_name --------------------
-
-
-// -------------------- Block_name --------------------
-
-
-// -------------------- Block_name --------------------
-
-
 // -------------------- Block_name --------------------
 
 @import "media" // Всегда в конце
