@@ -1,7 +1,5 @@
 $(function() {
 
-
-
 //    tab_about
     $(function () {
         $(".tab_item").not(":first").hide();
@@ -20,34 +18,66 @@ $(function() {
         }).eq(0).addClass("active");
     });
 
-//    diagram
-//     (function(w, d, n, s, t) {
-//         w[n] = w[n] || [];
-//         w[n].push(function() {
-//             Ya.Direct.insertInto(84098, "yandex_ad", {
-//                 ad_format: "direct",
-//                 type: "240x400",
-//                 border_type: "block",
-//                 border_radius: true,
-//                 site_bg_color: "FFFFFF",
-//                 header_bg_color: "FEEAC7",
-//                 bg_color: "FFF9F0",
-//                 border_color: "FBE5C0",
-//                 title_color: "0000CC",
-//                 url_color: "006600",
-//                 text_color: "000000",
-//                 hover_color: "0066FF",
-//                 favicon: true,
-//                 no_sitelinks: false
-//             });
-//         });
-//         t = d.getElementsByTagName("script")[0];
-//         s = d.createElement("script");
-//         s.src = "//an.yandex.ru/system/context.js";
-//         s.type = "text/javascript";
-//         s.async = true;
-//         t.parentNode.insertBefore(s, t);
-//     })(window, document, "yandex_context_callbacks");
+//     portfolio
+    $("#container").mixItUp({});
 
+//      team
+    $(".slick_container, .reviews_container").slick({
+        dots: true,
+        arrows: false
+    });
+
+//  scroll up
+    $(document).ready(function(){
+        $(window).scroll(function(){
+            if ($(this).scrollTop() > 100) {
+                $('.scrollup').fadeIn();
+            } else {
+                $('.scrollup').fadeOut();
+            }
+        });
+
+        $('.scrollup').click(function(){
+            $("html, body").animate({ scrollTop: 0 }, 600);
+            return false;
+        });
+
+    });
+
+//  scroll id
+    $(document).ready(function(){
+        $(".toolbar_li").on("click","a", function (event) {
+            event.preventDefault();
+            var id  = $(this).attr('href'),
+                top = $(id).offset().top;
+            $('body,html').animate({scrollTop: top }, 1200);
+        });
+    });
+
+// top menu
+    $(document).ready(function () {
+        $('.toolbar_btn_container').click(function () {
+            $('.toolbar_ul').slideToggle(500);
+        });
+        $(window).resize(function () {
+            if ($(window).width() > 968 ) {
+                $('.toolbar_ul').removeAttr('style');
+            }
+        });
+        $('.toolbar_li_link').click(function () {
+            $('.toolbar_ul').removeAttr('style');
+        });
+    });
+//    masonry
 
 });
+
+//  gallery swiper
+    var swiper = new Swiper('.swiper-container ', {
+        direction: 'vertical',
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+            autoHeight: true
+        },
+    });

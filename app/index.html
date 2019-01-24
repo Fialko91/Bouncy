@@ -18,6 +18,7 @@
 	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
 
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700i" rel="stylesheet">
+	<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">-->
 	<!-- Chrome, Firefox OS and Opera -->
 	<meta name="theme-color" content="#000">
 	<!-- Windows Phone -->
@@ -40,18 +41,20 @@
 				</div>
 				<nav class="toolbar">
 					<ul class="toolbar_ul">
-						<li class="toolbar_li"><a href="#" class="toolbar_li_link">hello</a></li>
-						<li class="toolbar_li"><a href="#" class="toolbar_li_link">about</a></li>
-						<li class="toolbar_li"><a href="#" class="toolbar_li_link">services</a></li>
-						<li class="toolbar_li"><a href="#" class="toolbar_li_link">portfolio</a></li>
-						<li class="toolbar_li"><a href="#" class="toolbar_li_link">team</a></li>
-						<li class="toolbar_li"><a href="#" class="toolbar_li_link">blog</a></li>
-						<li class="toolbar_li"><a href="#" class="toolbar_li_link">contact</a></li>
+						<li class="toolbar_li"><a href="#hello" class="toolbar_li_link">hello</a></li>
+						<li class="toolbar_li"><a href="#about" class="toolbar_li_link">about</a></li>
+						<li class="toolbar_li"><a href="#services" class="toolbar_li_link">services</a></li>
+						<li class="toolbar_li"><a href="#portfolio" class="toolbar_li_link">portfolio</a></li>
+						<li class="toolbar_li"><a href="#team" class="toolbar_li_link">team</a></li>
+						<li class="toolbar_li"><a href="#blog" class="toolbar_li_link">blog</a></li>
+						<li class="toolbar_li"><a href="#contact" class="toolbar_li_link">contact</a></li>
 					</ul>
 				</nav>
+
 				<div class="toolbar_btn_container">
-					<a href="#" class="toolbar_btn"><span></span></a>
+					<a href="#" class="menu_btn"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 26 26" id="Слой_1" version="1.1" viewBox="0 0 26 26" xml:space="preserve"><g><path d="M24.25,12.25H1.75C1.3359375,12.25,1,12.5859375,1,13s0.3359375,0.75,0.75,0.75h22.5   c0.4140625,0,0.75-0.3359375,0.75-0.75S24.6640625,12.25,24.25,12.25z"/><path d="M1.75,7.75h22.5C24.6640625,7.75,25,7.4140625,25,7s-0.3359375-0.75-0.75-0.75H1.75   C1.3359375,6.25,1,6.5859375,1,7S1.3359375,7.75,1.75,7.75z"/><path d="M24.25,18.25H1.75C1.3359375,18.25,1,18.5859375,1,19s0.3359375,0.75,0.75,0.75h22.5   c0.4140625,0,0.75-0.3359375,0.75-0.75S24.6640625,18.25,24.25,18.25z"/></g></svg></a>
 				</div>
+
 			</div>
 			<div class="header_container_text">
 				<h2 class="header_text_name">we are code cafe</h2>
@@ -59,7 +62,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="this_in_bouncy">
+	<section class="this_in_bouncy" id="hello">
 		<div class="this_in_bouncy_wrapper wrap">
 			<div class="container_main">
 				<div class="container_text_this">
@@ -75,7 +78,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="about">
+	<section class="about" id="about">
 		<div class="about_wrapper wrap">
 			<div class="about_container">
 				<div class="about_container_name">
@@ -166,16 +169,16 @@
 					<div class="feature_projects_bottom_text">
 						At vero eos et <span class="feature_projects_bottom_text_span">accusamus</span> et iusto odio dignissimos ducimus qui blanditiis
 					</div>
-					<button class="feature_projects_bottom_btn">submit now</button>
+					<button class="feature_projects_bottom_btn btn_style">submit now</button>
 				</div>
 			</div>
 		</div>
 	</section>
-	<section class="services">
+	<section class="services" id="services">
 		<div class="services_wrapper wrap">
 			<div class="services_container">
 				<div class="services_container_name">
-					<h3 class="services_name">details about bouncy</h3>
+					<h3 class="services_name">our services</h3>
 					<div class="services_name_text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</div>
 				</div>
 				<div class="tabs_services_wrapper">
@@ -444,10 +447,650 @@
 					</div>
 					<div class="impressed_container_main_signature">
 						- abdullah noman <br>
-						<span class="signature_role">creative director</span>, <span class="signature_place">code cafe</span>					</div>
+						<span class="signature_role">creative director</span>, <span class="signature_place">code cafe</span>
+					</div>
 				</div>
 				<div class="impressed_container_item ">
 					<img src="img/mac.png" alt="Mac PC" class="impressed_container_item_images">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="portfolio" id="portfolio">
+		<div class="portfolio_wrapper wrap">
+			<div class="portfolio_container">
+				<div class="portfolio_container_name">
+					<h3 class="portfolio_name">the portfolio</h3>
+					<div class="portfolio_text">
+						At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+					</div>
+				</div>
+				<div class="portfolio_button">
+					<button class="portfolio_button_item filter" data-filter="all">all works</button>
+					<button class="portfolio_button_item filter" data-filter=".category-print">print</button>
+					<button class="portfolio_button_item filter" data-filter=".category-identity">identity</button>
+					<button class="portfolio_button_item filter" data-filter=".category-branding">branding</button>
+					<button class="portfolio_button_item filter" data-filter=".category-web">web</button>
+					<button class="portfolio_button_item filter" data-filter=".category-html">html</button>
+					<button class="portfolio_button_item filter" data-filter=".category-wordpress">wordpress</button>
+				</div>
+				<div class="portfolio_wrapper_block " id="container">
+					<div class=" portfolio_block_item mix category-print">
+						<div class="box_images"><img src="img/4.png" alt="img" class="box_images_item">
+							<div class="overlay_wrap">
+								<div class="container_overlay">
+									<div class="container_overlay_name">title here</div>
+									<div class="container_overlay_text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</div>
+									<div class="container_overlay_link">
+										<a href="#" class="container_overlay_link_item">
+											<img src="img/link.png" alt="ссылка" class="link_img">
+										</a>
+										<a href="#" class="container_overlay_link_item">
+											<img src="img/like.png" alt="ссылка" class="link_img">
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class=" portfolio_block_item mix category-identity">
+						<div class="box_images"><img src="img/5.png" alt="img" class="box_images_item">
+							<div class="overlay_wrap">
+								<div class="container_overlay">
+									<div class="container_overlay_name">title here</div>
+									<div class="container_overlay_text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</div>
+									<div class="container_overlay_link">
+										<a href="#" class="container_overlay_link_item">
+											<img src="img/link.png" alt="ссылка" class="link_img">
+										</a>
+										<a href="#" class="container_overlay_link_item">
+											<img src="img/like.png" alt="ссылка" class="link_img">
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class=" portfolio_block_item mix category-branding">
+						<div class="box_images"><img src="img/6.png" alt="img" class="box_images_item">
+							<div class="overlay_wrap">
+								<div class="container_overlay">
+									<div class="container_overlay_name">title here</div>
+									<div class="container_overlay_text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</div>
+									<div class="container_overlay_link">
+										<a href="#" class="container_overlay_link_item">
+											<img src="img/link.png" alt="ссылка" class="link_img">
+										</a>
+										<a href="#" class="container_overlay_link_item">
+											<img src="img/like.png" alt="ссылка" class="link_img">
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class=" portfolio_block_item mix category-web">
+						<div class="box_images"><img src="img/7.png" alt="img" class="box_images_item">
+							<div class="overlay_wrap">
+								<div class="container_overlay">
+									<div class="container_overlay_name">title here</div>
+									<div class="container_overlay_text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</div>
+									<div class="container_overlay_link">
+										<a href="#" class="container_overlay_link_item">
+											<img src="img/link.png" alt="ссылка" class="link_img">
+										</a>
+										<a href="#" class="container_overlay_link_item">
+											<img src="img/like.png" alt="ссылка" class="link_img">
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class=" portfolio_block_item mix category-html">
+						<div class="box_images"><img src="img/8.png" alt="img" class="box_images_item">
+							<div class="overlay_wrap">
+								<div class="container_overlay">
+									<div class="container_overlay_name">title here</div>
+									<div class="container_overlay_text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</div>
+									<div class="container_overlay_link">
+										<a href="#" class="container_overlay_link_item">
+											<img src="img/link.png" alt="ссылка" class="link_img">
+										</a>
+										<a href="#" class="container_overlay_link_item">
+											<img src="img/like.png" alt="ссылка" class="link_img">
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class=" portfolio_block_item mix category-wordpress">
+						<div class="box_images"><img src="img/9.png" alt="img" class="box_images_item">
+							<div class="overlay_wrap">
+								<div class="container_overlay">
+									<div class="container_overlay_name">title here</div>
+									<div class="container_overlay_text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</div>
+									<div class="container_overlay_link">
+										<a href="#" class="container_overlay_link_item">
+											<img src="img/link.png" alt="ссылка" class="link_img">
+										</a>
+										<a href="#" class="container_overlay_link_item">
+											<img src="img/like.png" alt="ссылка" class="link_img">
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class=" portfolio_block_item mix category-print">
+						<div class="box_images"><img src="img/10.png" alt="img" class="box_images_item">
+							<div class="overlay_wrap">
+								<div class="container_overlay">
+									<div class="container_overlay_name">title here</div>
+									<div class="container_overlay_text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</div>
+									<div class="container_overlay_link">
+										<a href="#" class="container_overlay_link_item">
+											<img src="img/link.png" alt="ссылка" class="link_img">
+										</a>
+										<a href="#" class="container_overlay_link_item">
+											<img src="img/like.png" alt="ссылка" class="link_img">
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class=" portfolio_block_item mix category-identity">
+						<div class="box_images"><img src="img/11.png" alt="img" class="box_images_item">
+							<div class="overlay_wrap">
+								<div class="container_overlay">
+									<div class="container_overlay_name">title here</div>
+									<div class="container_overlay_text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</div>
+									<div class="container_overlay_link">
+										<a href="#" class="container_overlay_link_item">
+											<img src="img/link.png" alt="ссылка" class="link_img">
+										</a>
+										<a href="#" class="container_overlay_link_item">
+											<img src="img/like.png" alt="ссылка" class="link_img">
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class=" portfolio_block_item mix category-branding">
+						<div class="box_images"><img src="img/12.png" alt="img" class="box_images_item">
+							<div class="overlay_wrap">
+								<div class="container_overlay">
+									<div class="container_overlay_name">title here</div>
+									<div class="container_overlay_text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</div>
+									<div class="container_overlay_link">
+										<a href="#" class="container_overlay_link_item">
+											<img src="img/link.png" alt="ссылка" class="link_img">
+										</a>
+										<a href="#" class="container_overlay_link_item">
+											<img src="img/like.png" alt="ссылка" class="link_img">
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class=" portfolio_block_item mix category-web">
+						<div class="box_images"><img src="img/13.png" alt="img" class="box_images_item">
+							<div class="overlay_wrap">
+								<div class="container_overlay">
+									<div class="container_overlay_name">title here</div>
+									<div class="container_overlay_text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</div>
+									<div class="container_overlay_link">
+										<a href="#" class="container_overlay_link_item">
+											<img src="img/link.png" alt="ссылка" class="link_img">
+										</a>
+										<a href="#" class="container_overlay_link_item">
+											<img src="img/like.png" alt="ссылка" class="link_img">
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class=" portfolio_block_item mix category-html">
+						<div class="box_images"><img src="img/14.png" alt="img" class="box_images_item">
+							<div class="overlay_wrap">
+								<div class="container_overlay">
+									<div class="container_overlay_name">title here</div>
+									<div class="container_overlay_text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</div>
+									<div class="container_overlay_link">
+										<a href="#" class="container_overlay_link_item">
+											<img src="img/link.png" alt="ссылка" class="link_img">
+										</a>
+										<a href="#" class="container_overlay_link_item">
+											<img src="img/like.png" alt="ссылка" class="link_img">
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class=" portfolio_block_item mix category-wordpress">
+						<div class="box_images"><img src="img/15.png" alt="img" class="box_images_item">
+							<div class="overlay_wrap">
+								<div class="container_overlay">
+									<div class="container_overlay_name">title here</div>
+									<div class="container_overlay_text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</div>
+									<div class="container_overlay_link">
+										<a href="#" class="container_overlay_link_item">
+											<img src="img/link.png" alt="ссылка" class="link_img">
+										</a>
+										<a href="#" class="container_overlay_link_item">
+											<img src="img/like.png" alt="ссылка" class="link_img">
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="bottom_bc">
+				<div class="bottom_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+				<div class="bottom_btn btn_style">start project</div>
+			</div>
+		</div>
+	</section>
+	<section class="team" id="team">
+		<div class="team_wrapper wrap">
+			<div class="team_container">
+				<div class="team_container_name">
+					<h3 class="team_name">the team</h3>
+					<div class="team_text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</div>
+				</div>
+				<div class="slick_container">
+					<div class="slick_container_item">
+						<div class="slick_item">
+							<img src="img/team_item.png" alt="фото работника" class="slick_item_images">
+							<div class="overlay">
+								<div class="images_icon">
+									<a href="#" class="icon_link"><img src="img/icon_insta.png" alt="ссылка инстаграм" class="icon_item"></a>
+									<a href="#" class="icon_link"><img src="img/icon_facebook.png" alt="ссылка твитер" class="icon_item"></a>
+									<a href="#" class="icon_link"><img src="img/icon_twiter.png" alt="ссылка вейсбук" class="icon_item"></a>
+								</div>
+							</div>
+						</div>
+						<div class="slick_container_information">
+                            <div class="staff_wrap">
+                                <div class="staff_name">Abdullah Noman</div>
+                                <div class="staff_position">Creative Director, Code Cafe</div>
+                            </div>
+							<div class="staff_information">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</div>
+
+							<div class="staff_skills">
+								<div class="skill_name">branding</div>
+								<div class="skill_level">80%</div>
+							</div>
+							<div class="meter">
+								<span class="meter_level" style="width: 80%"></span>
+							</div>
+							<div class="staff_skills">
+								<div class="skill_name">web design</div>
+								<div class="skill_level">65%</div>
+							</div>
+							<div class="meter">
+								<span class="meter_level" style="width: 65%"></span>
+							</div>
+							<div class="staff_skills">
+								<div class="skill_name">user interface</div>
+								<div class="skill_level">75%</div>
+							</div>
+							<div class="meter">
+								<span class="meter_level" style="width: 75%"></span>
+							</div>
+
+						</div>
+					</div>
+					<div class="slick_container_item">
+						<div class="slick_item">
+							<img src="img/team_item.png" alt="фото работника" class="slick_item_images">
+							<div class="overlay">
+								<div class="images_icon">
+									<a href="#" class="icon_link"><img src="img/icon_insta.png" alt="ссылка инстаграм" class="icon_item"></a>
+									<a href="#" class="icon_link"><img src="img/icon_facebook.png" alt="ссылка твитер" class="icon_item"></a>
+									<a href="#" class="icon_link"><img src="img/icon_twiter.png" alt="ссылка вейсбук" class="icon_item"></a>
+								</div>
+							</div>
+						</div>
+						<div class="slick_container_information">
+                            <div class="staff_wrap">
+                                <div class="staff_name">Abdullah Noman</div>
+                                <div class="staff_position">Creative Director, Code Cafe</div>
+                            </div>
+							<div class="staff_information">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</div>
+
+							<div class="staff_skills">
+								<div class="skill_name">branding</div>
+								<div class="skill_level">80%</div>
+							</div>
+							<div class="meter">
+								<span class="meter_level" style="width: 80%"></span>
+							</div>
+							<div class="staff_skills">
+								<div class="skill_name">web design</div>
+								<div class="skill_level">65%</div>
+							</div>
+							<div class="meter">
+								<span class="meter_level" style="width: 65%"></span>
+							</div>
+							<div class="staff_skills">
+								<div class="skill_name">user interface</div>
+								<div class="skill_level">75%</div>
+							</div>
+							<div class="meter">
+								<span class="meter_level" style="width: 75%"></span>
+							</div>
+
+						</div>
+					</div>
+					<div class="slick_container_item">
+						<div class="slick_item">
+							<img src="img/team_item.png" alt="фото работника" class="slick_item_images">
+							<div class="overlay">
+								<div class="images_icon">
+									<a href="#" class="icon_link"><img src="img/icon_insta.png" alt="ссылка инстаграм" class="icon_item"></a>
+									<a href="#" class="icon_link"><img src="img/icon_facebook.png" alt="ссылка твитер" class="icon_item"></a>
+									<a href="#" class="icon_link"><img src="img/icon_twiter.png" alt="ссылка вейсбук" class="icon_item"></a>
+								</div>
+							</div>
+						</div>
+						<div class="slick_container_information">
+                            <div class="staff_wrap">
+                                <div class="staff_name">Abdullah Noman</div>
+                                <div class="staff_position">Creative Director, Code Cafe</div>
+                            </div>
+							<div class="staff_information">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</div>
+
+							<div class="staff_skills">
+								<div class="skill_name">branding</div>
+								<div class="skill_level">80%</div>
+							</div>
+							<div class="meter">
+								<span class="meter_level" style="width: 80%"></span>
+							</div>
+							<div class="staff_skills">
+								<div class="skill_name">web design</div>
+								<div class="skill_level">65%</div>
+							</div>
+							<div class="meter">
+								<span class="meter_level" style="width: 65%"></span>
+							</div>
+							<div class="staff_skills">
+								<div class="skill_name">user interface</div>
+								<div class="skill_level">75%</div>
+							</div>
+							<div class="meter">
+								<span class="meter_level" style="width: 75%"></span>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+    <section class="already">
+        <div class="already_wrapper">
+            <div class="already_container">
+                <div class="already_name">Already Loved Us? Let's talk!</div>
+                <button class="already_button btn_style">contact us</button>
+            </div>
+        </div>
+    </section>
+	<section class="testimonials">
+		<div class="testimonials_wrapper wrap">
+			<div class="testimonials_container">
+				<div class="testimonials_container_name">
+					<h3 class="testimonials_name">testimonials</h3>
+					<div class="testimonials_text">
+						At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+					</div>
+				</div>
+				<div class="reviews_container">
+					<div class="container_item">
+						<div class="container_img">
+							<img src="img/face_item.png" alt="фото человека" class="container_img_item">
+						</div>
+						<div class="reviews_container_main">
+							<div class="reviews_text">
+								At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia.
+							</div>
+							<div class="reviews_name">partho</div>
+							<div class="reviews_position">founder, artways bd</div>
+						</div>
+					</div>
+					<div class="container_item">
+						<div class="container_img">
+							<img src="img/face_item.png" alt="фото человека" class="container_img_item">
+						</div>
+						<div class="reviews_container_main">
+							<div class="reviews_text">
+								At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia.
+							</div>
+							<div class="reviews_name">partho</div>
+							<div class="reviews_position">founder, artways bd</div>
+						</div>
+					</div>
+					<div class="container_item">
+						<div class="container_img">
+							<img src="img/face_item.png" alt="фото человека" class="container_img_item">
+						</div>
+						<div class="reviews_container_main">
+							<div class="reviews_text">
+								At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia.
+							</div>
+							<div class="reviews_name">partho</div>
+							<div class="reviews_position">founder, artways bd</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="news" id="blog">
+		<div class="news_wrapper">
+			<div class="news_container wrap">
+				<div class="news_container_name">
+					<h3 class="news_name">latest news</h3>
+					<div class="news_test">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</div>
+				</div>
+                <div class="swiper-container">
+                    <div class="news_pages swiper-wrapper">
+                        <div class="news_page swiper-slide">
+                            <div class="page_name">the trending landing pages</div>
+                            <div class="page_signature"> by&thinsp;<p> kabir&thinsp;uddin</p></div>
+                            <div class="page_likes">6950 Likes - 243 Comments - 703 shares</div>
+                            <div class="page_text">
+                                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio...
+                            </div>
+                            <a href="#" class="page_link">read more</a>
+                        </div>
+                        <div class="news_page swiper-slide">
+                            <div class="page_name">the trending landing pages</div>
+                            <div class="page_signature">by &thinsp;<p>kabir&thinsp; uddin</p></div>
+                            <div class="page_likes">6950 Likes - 243 Comments - 703 shares</div>
+                            <div class="page_text">
+                                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio...
+                            </div>
+                            <a href="#" class="page_link">read more</a>
+                        </div>
+                        <div class="news_page swiper-slide">
+                            <div class="page_name">the trending landing pages</div>
+                            <div class="page_signature">by&thinsp; <p>kabir&thinsp; uddin</p></div>
+                            <div class="page_likes">6950 Likes - 243 Comments - 703 shares</div>
+                            <div class="page_text">
+                                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio...
+                            </div>
+                            <a href="#" class="page_link">read more</a>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+			</div>
+		</div>
+	</section>
+	<section class="price">
+		<div class="price_wrapper wrap">
+			<div class="price_container">
+				<div class="price_container_name">
+					<h3 class="price_name">our price</h3>
+					<div class="price_text">
+						At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+					</div>
+				</div>
+				<div class="price_items">
+					<div class="price_item">
+						<div class="item_block">
+							<div class="block_name">premium</div>
+							<div class="block_information">$60 <p>per month</p></div>
+						</div>
+						<div class="item_hover">
+							<div class="hover_information">
+								full branding <br>
+								project management <br>
+								unlimited revisions <br>
+								24/7 h service <br>
+								free domain <br>
+								free hosting <br>
+							</div>
+							<a href="#" class="hover_name">let's start</a>
+						</div>
+					</div>
+					<div class="price_item">
+						<div class="item_block">
+							<div class="block_name">pro premium</div>
+							<div class="block_information">$70 <p>per month</p></div>
+						</div>
+						<div class="item_hover">
+							<div class="hover_information">
+								full branding <br>
+								project management <br>
+								unlimited revisions <br>
+								24/7 h service <br>
+								free domain <br>
+								free hosting <br>
+							</div>
+							<a href="#" class="hover_name">let's start</a>
+						</div>
+					</div>
+					<div class="price_item">
+						<div class="item_block">
+							<div class="block_name">exclusive</div>
+							<div class="block_information">$80 <p>per month</p></div>
+						</div>
+						<div class="item_hover">
+							<div class="hover_information">
+								full branding <br>
+								project management <br>
+								unlimited revisions <br>
+								24/7 h service <br>
+								free domain <br>
+								free hosting <br>
+							</div>
+							<a href="#" class="hover_name">let's start</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="subscribe">
+		<div class="subscribe_wrapper wrap">
+			<div class="subscribe_container">
+				<div class="subscribe_container_name">
+					<h3 class="subscribe_name">subscribe us</h3>
+					<div class="subscribe_text">
+						At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+					</div>
+				</div>
+				<div class="subscribe_form">
+					<input type="email" placeholder="email address" class="subscribe_email">
+					<input type="submit" value="submit" class="subscribe_btn">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="contact" id="contact">
+		<div class="contact_wrapper ">
+			<div class="contact_container wrap">
+				<div class="contact_container_name">
+					<h3 class="contact_name">contact us</h3>
+					<div class="contact_text">
+						At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+					</div>
+				</div>
+				<div class="contact_items">
+					<div class="contact_item">
+						<div class="contact_item_icon">
+							<img src="img/arms.png" alt="почта" class="contact_icon_img">
+							<img class="item_icon" src="img/mail.png">
+						</div>
+						<div class="contact_item_text">
+							<div class="text_name">email</div>
+							<a href="mailto:hello@codecafe.com" class="text_information">hello@codecafe.com</a>
+							<a href="mailto:Personal@codecafe.com" class="text_information">Personal@codecafe.com</a>
+						</div>
+					</div>
+					<div class="contact_item">
+						<div class="contact_item_icon">
+							<img src="img/map.png" alt="карта" class="contact_icon_img">
+							<img class="item_icon" src="img/geo.png">
+						</div>
+						<div class="contact_item_text">
+							<div class="text_name">our office</div>
+							<a href="https://goo.gl/maps/BKd6XfGGEt92" class="text_information" target="_blank">240 Bhatikhana, 8200 Barisal
+								Bangladesh</a>
+						</div>
+					</div>
+					<div class="contact_item">
+						<div class="contact_item_icon">
+							<img src="img/laptop.png" alt="телефон" class="contact_icon_img">
+							<img class="item_icon" src="img/phone.png">
+						</div>
+						<div class="contact_item_text">
+							<div class="text_name">phone</div>
+							<a href="tel:+00 11 66 99 66 44" class="text_information">+00 11 66 99 66 44</a>
+							<a href="tel:11 99 66 44 065" class="text_information">11 99 66 44 065</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="form_wrapper">
+				<div class="contact_form wrap">
+					<input type="text" class="contact_form_name" placeholder="your name">
+					<input type="email" class="contact_form_email" placeholder="email address">
+					<input type="text" class="contact_form_sub" placeholder="subject">
+					<textarea class="contact_form_text"></textarea>
+					<button class="contact_form_btn">submit now</button>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="map">
+		<div class="map_wrapper">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d58894.13647543677!2d90.31878474254528!3d22.695379290521466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s240+Bhatikhana%2C+8200+Barisal+Bangladesh!5e0!3m2!1sru!2sua!4v1547777337712" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</div>
+	</section>
+	<section class="footer">
+		<div class="footer_wrapper wrap">
+			<div class="footer_container">
+				<div class="footer_name">bouncy</div>
+				<div class="footer_text">Copyright 2015. All rights Reserved</div>
+				<div class="footer_items">
+					<a href="#" class="footer_item"><img src="img/f.png" alt="facebook"></a>
+					<a href="#" class="footer_item"><img src="img/bird.png" alt="facebook"></a>
+					<a href="#" class="footer_item"><img src="img/in.png" alt="facebook"></a>
+					<a href="#" class="footer_item"><img src="img/icon_inst.png" alt="facebook"></a>
+					<a href="#" class="footer_item"><img src="img/v.png" alt="facebook"></a>
 				</div>
 			</div>
 		</div>
@@ -480,7 +1123,9 @@
 	<!-- bower:js -->
 	<!-- endbower -->
 	<script src="js/scripts.min.js"></script>
+	<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>-->
 <!-- scripts and styles - end -->
 
+<a href="#" class="scrollup">Наверх</a>
 </body>
 </html>

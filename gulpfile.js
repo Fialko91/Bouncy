@@ -28,6 +28,12 @@ gulp.task('bower', function () {
 gulp.task('scripts', function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
+		'app/libs/jquery.mixitup.js',
+		'app/libs/slick/slick.min.js',
+		'app/libs/swiper/swiper.min.js',
+		// 'app/libs/isotope.pkgd.min.js',
+		'app/libs/masonry.pkgd.min.js',
+		// 'app/libs/materialize-src/js/bin/materialize.min.js',
 		'app/js/common.js', // Всегда в конце
 		])
 	.pipe(concat('scripts.min.js'))

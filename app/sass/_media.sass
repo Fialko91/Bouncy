@@ -1,26 +1,326 @@
-@import "bourbon"
+//@import "bourbon"
 @import "vars"
 
 /*==========  Desktop First  ==========*/
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
-	/**/
-
+  /**/
+@media only screen and (max-width : 1100px)
+  .portfolio_wrapper
+    .portfolio_container
+      .portfolio_wrapper_block
+        .portfolio_block_item
+          .box_images_item
+            height: 30vh
+@media only screen and (max-width : 1028px)
+  .impressed_wrapper
+    .impressed_container
+      .impressed_container_main
+        max-width: 100%
+      .impressed_container_item
+        display: none
+@media only screen and (max-width : 1012px)
+  .services_wrapper
+    .services_container
+      .tab_services_content
+        .tab_services_item
+          .tab_services_main
+            .tab_services_wrapper_content
+              max-width: 100%
+              padding-bottom: 25px
+            .tab_services_diagram_container
+              margin: 0 auto
+@media only screen and (max-width : 910px)
+  .about_wrapper
+    .about_container
+      .tab_content
+        .tab_item
+          .tab_content_wrapper
+            .tab_content_wrapper_left_block, .tabs_content_wrapper_right_block
+              max-width: 100%
+  .contact_container
+    .contact_items
+      justify-content: center
+  .form_wrapper
+    .contact_form
+      &_name, &_email, &_sub
+        width: 100%
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 992px)
-	/**/
+@media only screen and (max-width : 900px)
+  .top_nav
+    .toolbar
+      width: 100%
+      left: 50%
+      top: 0
+      transform: translate(-50%, 0)
+      z-index: 999
+      .toolbar_ul
+        //display: flex
+        display: none
+        flex-direction: column
+        text-align: center
+        background-color: $green
+        height: 100vh  //test //
+        padding-top: 25%
+        .toolbar_li
+          padding: 12px 0
+          .toolbar_li_link
+            padding: 10px 100px
+    .toolbar_btn_container
+      display: block
+      z-index: 999
 
 
 /* Small Devices, Tablets */
+@media only screen and (max-width : 855px)
+  .feature_projects_wrapper
+    .feature_projects_bottom
+      .feature_projects_container_bottom
+        display: flex
+        justify-content: center
+        .feature_projects_bottom_btn
+          //margin: 0 auto
+          margin-top: 20px
+
 @media only screen and (max-width : 768px)
-	/**/
+  .header_wrapper
+    .header_container_text
+      .header_text_name
+        font-size: 30px
+      .header_text_text
+        font-size: 14px
+  .this_in_bouncy_wrapper
+    .container_main
+      padding: 60px 0 40px
+      .container_text_this
+        max-width: 100%
+        .this_name
+          padding-bottom: 30px
+        .this_text
+          font-size: 14px
+      .container_img
+        padding-top: 20px
+        margin: 0 auto
+        display: flex
+        align-items: center
+        justify-content: center
+        .img_item
+          width: 70%
+  .services_wrapper
+    padding-top: 40px
+    padding-bottom: 70px
+    .services_container
+      .services_container_name
+        padding-bottom: 40px
+        .services_name
+          padding-bottom: 30px
+    .tabs_services_wrapper
+      .tabs_services
+        position: absolute
+        display: flex
+        left: 50%
+        transform: translate(-50%, 0)
+        &_item
+          margin-right: 20px
+      .tab_services_content
+        padding-top: 60px
+        .tab_services_main
+          .tab_services_wrapper_content
+            .main_text
+              font-size: 14px
+        .tab_services_diagram_container
+          display: flex
+          flex-wrap: wrap
+          justify-content: center
+          .progress
+            width: 100%
+            li
+              margin: 0 auto 30px
+  .about_wrapper
+    padding-top: 40px
+    padding-bottom: 60px
+    .about_container
+      .about_container_name
+        padding-bottom: 40px
+        .about_name
+          padding-bottom: 30px
+      .tab_content
+        .tab_item
+          .tab_content_name
+            line-height: 100px
+          .tab_content_wrapper
+            .tab_content_wrapper_left_block, .tabs_content_wrapper_right_block
+              font-size: 14px
+  .feature_projects_wrapper
+    padding-top: 40px
+    .feature_projects_text_container
+      padding-bottom: 40px
+      .feature_projects_name
+        padding-bottom: 30px
+    .feature_projects_main_container
+      .feature_projects_images_container
+        width: 300px
+  .portfolio_wrapper
+    padding-top: 40px
+    padding-bottom: 60px
+    .portfolio_container
+      .portfolio_container_name
+        padding-bottom: 40px
+        .portfolio_name
+          padding-bottom: 30px
+      .portfolio_button
+        padding-bottom: 40px
+    .bottom_bc
+      .bottom_text
+        font-size: 18px
+  .impressed_wrapper
+    .impressed_container
+      padding-top: 40px
+      padding-bottom: 40px
+      .impressed_container_main_text
+        font-size: 14px
+  .testimonials_wrapper
+    .testimonials_container
+      .reviews_container
+        .container_item
+          .reviews_container_main
+            .reviews_text
+              font-size: 14px
+  .news_wrapper
+    padding: 40px 0
+    .news_container
+      .news_container_name
+        padding-bottom: 80px
+      .swiper-container
+        .news_pages
+          width: auto
+          max-height: 100%
+          padding: 0 50px
+          .page_name
+            font-size: 16px
+          .page_likes
+            padding-bottom: 30px
+          .page_text
+            font-size: 12px
+  .form_wrapper
+    .contact_form
+      &_name, &_email, &_sub
+        margin-bottom: 15px
+  .team_wrapper
+    padding-top: 40px
+    padding-bottom: 60px
+    .team_container_name
+      .team_name
+        padding-bottom: 30px
+  .testimonials_wrapper
+    padding-top: 40px
+    padding-bottom: 60px
+    .testimonials_container
+      .testimonials_container_name
+        padding-bottom: 40px
+        .testimonials_name
+          padding-bottom: 30px
+      .reviews_container
+        .container_item
+          padding: 40px 0 50px
+  .price_wrapper
+    .price_container
+      padding: 40px 0 60px
+      .price_container_name
+        .price_name
+          padding-bottom: 30px
+        .price_text
+          padding-bottom: 40px
+  .subscribe
+    .subscribe_wrapper
+      padding-top: 40px
+      padding-bottom: 60px
+      .subscribe_container
+        .subscribe_container_name
+          padding-bottom: 40px
+          .subscribe_name
+            padding-bottom: 30px
+  .contact_wrapper
+    .contact_container
+      padding-top: 40px
+      padding-bottom: 60px
+      .contact_container_name
+        .contact_name
+          padding-bottom: 30px
+        .contact_text
+          padding-bottom: 40px
+    .form_wrapper
+      .contact_form
+        padding-top: 40px
+        padding-bottom: 60px
+  .footer_wrapper
+    .footer_container
+      padding-top: 40px
+      padding-bottom: 60px
+@media only screen and (max-width : 754px)
+  .price_wrapper
+    .price_container
+      .price_items
+        justify-content: center
+        .price_item
+          .item_block
+            .block_information
+              padding: 30px 0 80px
+          .item_hover
+            .hover_information
+              padding-top: 20px
+              padding-bottom: 40px
+              line-height: 29px
+
+@media only screen and (max-width : 744px)
+  .team_wrapper
+    .slick_container_item
+      //padding: 0
+      .slick_item
+        margin: 0 auto
+        width: 200px
+        height: 250px
+        .slick_item_images
+          width: 100%
+          height: 100%
+          object-fit: cover
+      .slick_container_information
+        margin: 0 auto
+        padding-top: 25px
+        .staff_wrap
+          right: 30px
 
 
 /* Extra Small Devices, Phones */
+@media only screen and (max-width : 528px)
+  .subscribe
+    .subscribe_wrapper
+      .subscribe_container
+        .subscribe_form
+          .subscribe_btn
+            margin-top: 10px
 @media only screen and (max-width : 480px)
-	/**/
+  .news_wrapper
+    .news_container
+      .news_container_name
+        padding-bottom: 30px
+      .swiper-container
+        .news_pages
+          padding: 0 5px
+          .page_likes, .page_text
+            padding-bottom: 10px
+
+  .team_wrapper
+    .slick_container_item
+      padding: 0
+      .slick_item
+        width: 200px
+        .slick_item_images
+          width: 100%
+          height: 100%
+          object-fit: cover
 
 
 /* Custom, iPhone Retina */

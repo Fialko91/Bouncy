@@ -18,6 +18,7 @@
     padding-top: 40px
     flex-wrap: wrap
     position: relative
+    align-items: center
     .container_logo
       display: flex
       align-items: center
@@ -50,13 +51,14 @@
     top: 50%
     transform: translate(-50%, -50%)
     max-width: 606px
+    width: 100%
     text-align: center
     .header_text_name
       color: white
       font-family: "SourceSansProLight", sans-serif
       font-size: 35px
       font-weight: 300
-      line-height: 70px
+      line-height: 60px
       text-transform: uppercase
       letter-spacing: 10px
     .header_text_text
@@ -67,8 +69,30 @@
       line-height: 28px
 
 
-    .toolbar_btn_container
-      display: none
+  .toolbar_btn_container
+    display: none
+    position: absolute
+    right: 0
+    //top: 50%
+    //transform: translate(-50%, 0)
+    //display: flex
+    //align-items: center
+    //position: relative
+
+    .menu_btn
+      //display: none
+      text-align: center
+      width: 30px
+      height: 30px
+      position: absolute
+      //left: 50%
+      top: 85%
+      right: 0
+      transform: translate(-50%, -50%)
+      svg
+        fill: #fff
+        width: 30px
+        height: 30px
 // -------------------- this_in_bouncy --------------------
 .this_in_bouncy_wrapper
   .container_main
@@ -93,7 +117,7 @@
       .this_text
         color: #81868e
         font-family: "OpenSans", sans-serif
-        font-size: 14px
+        font-size: 16px
         font-weight: 400
         line-height: 25px
         padding-bottom: 35px
@@ -181,6 +205,7 @@
               font-weight: bold
           .tabs_content_wrapper_right_block
             max-width: 568px
+            width: 100%
             line-height: 28px
             font-family: "OpenSans", sans-serif
             font-size: 16px
@@ -202,6 +227,7 @@
     text-align: center
     flex-direction: column
     padding-bottom: 65px
+    max-width: 460px
     .feature_projects_name
       padding-bottom: 45px
     .feature_projects_text
@@ -254,40 +280,32 @@
     background-size: cover
     width: 100%
     max-width: 100%
-    height: 113px
+    //height: 113px
     .feature_projects_container_bottom
       display: flex
       justify-content: space-between
       flex-wrap: wrap
       padding: 40px 10px
+      align-items: center
       .feature_projects_bottom_text
         color: white
         font-family: "OpenSans", sans-serif
         font-size: 20px
-        line-height: 25px
+        line-height: 20px
         &_span
           font-weight: 700
       .feature_projects_bottom_btn
-        color: white
-        font-family: "OpenSans", sans-serif
         font-size: 16px
         font-weight: 400
         line-height: 12px
-        background-color: transparent
-        outline: none
-        padding: 10px 27px
-        border: 1px solid #ffffff
-        border-radius: 23px
-        transition: all .35s
-        text-transform: capitalize
-        &:hover
-          transform: scale(1.1)
-
+        margin-left: 10px
+        //margin: 0 auto
 // -------------------- services --------------------
 .services_wrapper
   padding-top: 80px
   padding-bottom: 140px
-  width: 1030px
+  //width: 1030px
+  max-width: 1030px
   .services_container
     .services_container_name
       display: flex
@@ -295,6 +313,8 @@
       justify-content: center
       text-align: center
       padding-bottom: 60px
+      max-width: 460px
+      margin: 0 auto
       .services_name
         padding-bottom: 40px
       .services_name_text
@@ -305,6 +325,8 @@
         line-height: 25px
   .tabs_services_wrapper
     display: flex
+    position: relative
+    //flex-wrap: wrap
 
     .tabs_services
       &_item
@@ -357,7 +379,7 @@
             display: flex
             justify-content: space-between
             text-align: center
-
+            flex-wrap: wrap
           .progress > li
             display: inline-block
             position: relative
@@ -407,12 +429,14 @@
 @keyframes load
   0%
     stroke-dashoffset: 0
+
 // -------------------- impressed --------------------
 .impressed_wrapper
   background: url("../img/BG.png") no-repeat center
   background-size: cover
   max-width: 100%
-  min-height: 392px
+  //min-height: 392px
+  max-height: 392px
   position: relative
   //height: 100%
   .impressed_container
@@ -453,18 +477,822 @@
           color: #19bd9a
           font-weight: 400
     .impressed_container_item
-      position: absolute
-      right: 0
-      bottom: 40px
-      margin: 0 10px
-      .impressed_container_item_images
-// -------------------- Block_name --------------------
+      //position: absolute
+      //right: 0
+      //bottom: 40px
+      //margin: 0 10px
+      position: relative
+      bottom: 100px
+      &_images
 
 
-// -------------------- Block_name --------------------
-// -------------------- Block_name --------------------
-// -------------------- Block_name --------------------
-// -------------------- Block_name --------------------
-// -------------------- Block_name --------------------
+
+// -------------------- portfolio --------------------
+.portfolio_wrapper
+  padding-top: 80px
+  padding-bottom: 100px
+  .portfolio_container
+    display: flex
+    justify-content: center
+    flex-direction: column
+    padding-bottom: 40px
+    .portfolio_container_name
+      text-align: center
+      margin: 0 auto
+      padding-bottom: 80px
+      .portfolio_name
+        padding-bottom: 40px
+      .portfolio_text
+        color: #81868e
+        font-family: "OpenSans", sans-serif
+        font-size: 14px
+        font-weight: 400
+        line-height: 25px
+        max-width: 450px
+    .portfolio_button
+      text-align: center
+      padding-bottom: 75px
+      max-width: 571px
+      margin: 0 auto
+      position: relative
+      &_item
+        color: #464646
+        background-color: transparent
+        outline: none
+        font-family: "OpenSans", sans-serif
+        font-size: 16px
+        font-weight: 400
+        line-height: 12px
+        border: none
+        text-transform: capitalize
+        padding: 5px
+        margin-top: 10px
+      .active
+        position: relative
+        &:before
+          content: " "
+          position: absolute
+          background-color: $green
+          width: 40px
+          height: 2px
+          bottom: -8px
+          left: 50%
+          transform: translate(-50%, 0)
+    .portfolio_wrapper_block
+      display: flex
+      flex-wrap: wrap
+      justify-content: center
+      .mix
+        display: none
+      .portfolio_block_item
+        .box_images
+          position: relative
+          max-width: 270px
+          width: 100%
+          display: flex
+          &_item
+            object-fit: cover
+            width: 100%
+            max-height: 360px
+            height: 100vh
+          .overlay_wrap
+            position: absolute
+            background-color: rgba(0, 0, 0, 0.7)
+            width: 100%
+            height: 100%
+            top: 0
+            cursor: pointer
+            opacity: 0
+            transition: all .35s
+            .container_overlay
+              width: 200px
+              display: flex
+              flex-direction: column
+              position: absolute
+              top: 50%
+              left: 50%
+              transform: translate(-50%, -50%)
+              &_name
+                color: #19bd9a
+                font-family: "SourceSansProLight", sans-serif
+                font-size: 20px
+                font-weight: 300
+                line-height: 12px
+                padding-bottom: 50px
+                text-transform: uppercase
+                &:after
+                  content: " "
+                  width: 25px
+                  background-color: #19bd9a
+                  height: 1px
+                  top: 35px
+                  left: 0
+                  position: absolute
+              &_text
+                color: #b2b3b3
+                font-family: "OpenSans", sans-serif
+                font-size: 12px
+                font-weight: 400
+                line-height: 20px
+                padding-bottom: 40px
+              &_link
+                display: flex
+                cursor: pointer
+                &_item
+                  width: 30px
+                  height: 30px
+                  background-color: black
+                  border-radius: 50%
+                  display: flex
+                  align-items: center
+                  align-content: center
+                  justify-content: center
+                  margin-right: 10px
+                  transition: all .35s
+                  &:hover
+                    background-color: #19bd9a
+            &:hover
+              opacity: 1
+  .bottom_bc
+    background: url("../img/button_bc.png") center
+    background-size: cover
+    width: 100%
+    //max-width: 100%
+    //height: 200px
+    display: flex
+    padding: 40px 10px
+    justify-content: center
+    flex-direction: column
+    text-align: center
+    align-items: center
+    .bottom_text
+      max-width: 770px
+      padding-bottom: 20px
+      color: white
+      font-family: "OpenSans", sans-serif
+      font-size: 20px
+      line-height: 25px
+    .bottom_btn
+      font-size: 16px
+      font-weight: 400
+      line-height: 12px
+
+// -------------------- team --------------------
+.team_wrapper
+  padding-top: 80px
+  padding-bottom: 100px
+  .team_container
+    &_name
+      text-align: center
+      max-width: 460px
+      margin: 0 auto
+      padding-bottom: 40px
+      .team_name
+        padding-bottom: 40px
+      .team_text
+        color: #81868e
+        font-family: "OpenSans", sans-serif
+        font-size: 14px
+        font-weight: 400
+        line-height: 25px
+  .slick_container
+    padding-bottom: 80px
+    &_item
+      display: flex
+      justify-content: space-between
+      flex-wrap: wrap
+      outline: none
+      padding: 0 50px
+      .slick_item
+        position: relative
+        display: flex
+
+        &_images
+          //width: 250px
+          //height: 500px
+          //object-fit: cover
+
+        .overlay
+          opacity: 0
+          background-color: rgba(255, 255, 255, 0.75)
+          width: 94%
+          height: 95%
+          position: absolute
+          top: 50%
+          left: 50%
+          transform: translate(-50%, -50%)
+          transition: all .35s
+          .images_icon
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            width: 112px
+            display: flex
+            justify-content: space-between
+            .icon_link
+              background-color: #19bd9a
+              width: 30px
+              height: 30px
+              border-radius: 50%
+              display: flex
+              align-items: center
+              justify-content: center
+              transition: all .25s
+              .icon_item
+              &:hover
+                transform: scale(1.1)
+          &:hover
+            opacity: 1
+
+      .slick_container_information
+        display: flex
+        flex-direction: column
+        text-align: right
+        max-width: 340px
+        padding-left: 10px
+        padding-right: 10px
+        .staff_wrap
+          position: relative
+          &:after
+            content: " "
+            position: absolute
+            width: 5px
+            height: 60px
+            background-color: $green
+            top: 0
+            right: -30px
+          .staff_name
+            color: #464646
+            font-family: "OpenSans", sans-serif
+            font-size: 20px
+            font-weight: 400
+          .staff_position
+            padding-bottom: 30px
+            color: $text
+            font-family: "SourceSansProLight", sans-serif
+            font-size: 14px
+            font-weight: 300
+            line-height: 25px
+            text-transform: uppercase
+        .staff_information
+          padding-bottom: 30px
+          color: $text
+          font-family: "OpenSans", sans-serif
+          font-size: 14px
+          font-weight: 400
+          line-height: 25px
+        .staff_skills
+          display: flex
+          justify-content: space-between
+          .skill_name, .skill_level
+            color: $text
+            font-family: "SourceSansProLight", sans-serif
+            font-size: 16px
+            font-weight: 300
+            line-height: 25px
+            text-transform: uppercase
+            letter-spacing: 2px
+        .meter
+          height: 3px
+          position: relative
+          background-color: #e1e4e9
+          max-width: 330px
+          margin-bottom: 35px
+          &_level
+            display: block
+            height: 100%
+            background-color: #19bd9a
+            position: relative
+            overflow: hidden
+.slick-dots
+  bottom: 0
+.slick-dots li button:before
+  color: white
+  background-color: #19bd9a
+  border-radius: 50%
+  width: 11px
+  height: 11px
+  position: absolute
+  line-height: 12px !important
+  font-size: 8px !important
+.slick-dots li.slick-active button:before
+  transition: all .35s
+  color: $green
+
+// -------------------- already --------------------
+.already_wrapper
+  background: url("../img/bc_already.png") no-repeat
+  background-size: cover
+  height: 200px
+  max-width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  .already_container
+    display: flex
+    flex-direction: column
+    align-items: center
+    .already_name
+      padding-bottom: 30px
+      color: white
+      font-family: "OpenSans", sans-serif
+      font-size: 20px
+      font-weight: 400
+      line-height: 25px
+    .already_button
+      color: #ffffff
+      font-family: "OpenSans", sans-serif
+      font-size: 16px
+      font-weight: 400
+      line-height: 12px
+
+// -------------------- testimonials --------------------
+.testimonials_wrapper
+  padding-top: 80px
+  padding-bottom: 100px
+  .testimonials_container
+    .testimonials_container_name
+      max-width: 460px
+      text-align: center
+      margin: 0 auto
+      padding-bottom: 60px
+      .testimonials_name
+        padding-bottom: 40px
+      .testimonials_text
+        color: $text
+        font-family: "OpenSans", sans-serif
+        font-weight: 400
+        font-size: 14px
+        line-height: 25px
+    .reviews_container
+      background-color: #fff
+      outline: none
+      .container_item
+        display: flex
+        justify-content: space-around
+        padding: 50px 0 100px
+        flex-wrap: wrap
+        outline: none
+        .container_img
+          //padding-bottom: 20px
+          padding: 0 15px 20px
+        .reviews_container_main
+          max-width: 770px
+          .reviews_text
+            color: $text
+            font-family: "OpenSans", sans-serif
+            font-weight: 400
+            font-size: 16px
+            line-height: 28px
+            padding-bottom: 30px
+          .reviews_name
+            color: $green
+            font-family: "OpenSans", sans-serif
+            font-size: 16px
+            font-weight: 700
+            line-height: 20px
+            text-transform: uppercase
+          .reviews_position
+            color: #464646
+            font-family: "OpenSans", sans-serif
+            font-size: 14px
+            font-weight: 400
+            line-height: 20px
+            text-transform: uppercase
+
+// -------------------- news --------------------
+.news_wrapper
+  background: url("../img/BG2.png") no-repeat center
+  background-size: cover
+  padding: 80px 0
+  .news_container
+    .news_container_name
+      padding-bottom: 110px
+      .news_name
+        padding-bottom: 35px
+        color: white
+      .news_test
+        color: $text2
+        font-family: "OpenSans", sans-serif
+        font-size: 14px
+        font-weight: 400
+        line-height: 25px
+
+    .swiper-container
+      width: 100%
+      height: 360px
+      .news_pages
+        width: 630px
+        padding: 0 70px
+        .page_name
+          color: $text3
+          font-family: "OpenSans", sans-serif
+          font-size: 20px
+          font-weight: 400
+          text-transform: capitalize
+          letter-spacing: 1px
+        .page_signature
+          font-family: "SourceSansProLight", sans-serif
+          font-size: 14px
+          font-weight: 300
+          line-height: 25px
+          text-transform: uppercase
+          display: flex
+          color: $text
+          letter-spacing: 1px
+          p
+            color: $green
+        .page_likes
+          color: #464646
+          font-family: "SourceSansProLight", sans-serif
+          font-size: 14px
+          font-weight: 300
+          line-height: 25px
+          padding-bottom: 40px
+          letter-spacing: 1px
+        .page_text
+          color: $text
+          font-family: "OpenSans", sans-serif
+          font-size: 14px
+          font-weight: 400
+          line-height: 25px
+          padding-bottom: 30px
+          letter-spacing: 1px
+        .page_link
+          color: $text2
+          font-family: "OpenSans", sans-serif
+          font-size: 16px
+          font-weight: 400
+          line-height: 12px
+          text-decoration: none
+          position: relative
+          transition: all .25s
+          &:before
+            content: "+"
+            padding-right: 3px
+          &:hover
+            color: $green
+      .swiper-pagination
+        .swiper-pagination-bullet-active
+          background: $text2
+          margin: 10px 0
+          width: 10px
+          height: 10px
+        .swiper-pagination-bullet
+          border: 1px solid $text2
+          opacity: 1
+          margin: 10px 0
+          width: 10px
+          height: 10px
+// -------------------- price --------------------
+.price_wrapper
+  .price_container
+    padding: 80px 0 100px
+    .price_container_name
+      text-align: center
+      max-width: 560px
+      margin: 0 auto
+      .price_name
+        padding-bottom: 40px
+      .price_text
+        padding-bottom: 60px
+        color: $text
+        font-size: 14px
+        font-weight: 400
+        line-height: 25px
+        font-family: "OpenSans", sans-serif
+    .price_items
+      display: flex
+      max-width: 833px
+      justify-content: space-between
+      margin: 0 auto
+      flex-wrap: wrap
+
+      .price_item
+        width: 235px
+        position: relative
+        overflow: hidden
+        background-color: white
+        margin: 0 5px 15px
+        .item_block
+          transition: all 0.25s
+          .block_name
+            cursor: pointer
+            background-color: $green
+            color: white
+            padding: 30px 0
+            font-family: "OpenSans", sans-serif
+            font-size: 20px
+            font-weight: 700
+            text-transform: uppercase
+            letter-spacing: 1px
+            line-height: 20px
+            text-align: center
+          .block_information
+            color: $green
+            font-family: "SourceSansPro", sans-serif
+            font-size: 42px
+            font-weight: bold
+            padding: 40px 0 110px
+            text-align: center
+            text-transform: capitalize
+            p
+              color: $text
+              font-size: 20px
+              font-weight: 400
+              line-height: 28px
+        &:hover
+          .item_hover
+            top: 0
+            transition: all .25s
+        .item_hover
+          transition: all .25s
+          position: absolute
+          top: -400px
+          //height: 361px
+          width: inherit
+          background-color: #fff
+          .hover_information
+            color: $text
+            font-family: "OpenSans", sans-serif
+            font-size: 14px
+            font-weight: 400
+            line-height: 30px
+            text-transform: capitalize
+            padding-top: 35px
+            padding-left: 35px
+            padding-bottom: 60px
+          .hover_name
+            cursor: pointer
+            background-color: $green
+            color: white
+            padding: 30px 56px
+            font-family: "OpenSans", sans-serif
+            font-size: 20px
+            font-weight: 700
+            text-transform: uppercase
+            letter-spacing: 1px
+            line-height: 20px
+            text-align: center
+            text-decoration: none
+            transition: all .25s
+            &:before
+              position: absolute
+              content: " "
+              background: url("../img/arrow.png") no-repeat
+              background-size: cover
+              width: 8px
+              height: 12px
+              right: 40px
+              bottom: 10px
+            &:hover
+              box-shadow: 0 0 0 2px $green inset, 0 0 0 4px white inset
+              border-radius: 3px
+
+
+
+// -------------------- subscribe --------------------
+.subscribe
+  background: url("../img/BG3.png") center
+  background-size: cover
+  .subscribe_wrapper
+    //padding: 80px 0 100px
+    padding-top: 80px
+    padding-bottom: 100px
+    .subscribe_container
+      text-align: center
+      .subscribe_container_name
+        text-align: center
+        max-width: 465px
+        margin: 0 auto
+        padding-bottom: 60px
+        .subscribe_name
+          color: white
+          font-family: "SourceSansProLight", sans-serif
+          font-size: 20px
+          font-weight: 300
+          line-height: 12px
+          text-transform: uppercase
+          padding-bottom: 40px
+        .subscribe_text
+          color: $text
+          font-family: "OpenSans", sans-serif
+          font-size: 14px
+          font-weight: 400
+          line-height: 25px
+      .subscribe_form
+        display: flex
+        justify-content: space-around
+        max-width: 520px
+        margin: 0 auto
+        flex-wrap: wrap
+        .subscribe_email
+          background-color: transparent
+          width: 360px
+          border: 1px solid $text
+          outline: none
+          padding: 15px 0
+          color: #cfd3d4
+          text-indent: 20px
+          &::placeholder
+            color: #cfd3d4
+            text-transform: capitalize
+            font-family: "OpenSans", sans-serif
+            font-size: 14px
+            font-weight: 400
+        .subscribe_btn
+          padding: 15px 45px
+          background-color: $green
+          border: 1px solid $green
+          color: white
+          font-family: "OpenSans", sans-serif
+          font-size: 14px
+          font-weight: 400
+          text-transform: uppercase
+          outline: none
+          transition: all .25s
+          margin-left: 5px
+          &:hover
+            box-shadow: 0 0 0 2px $green inset, 0 0 0 4px white inset
+            border-radius: 3px
+
+// -------------------- contact --------------------
+.contact_container
+  padding-top: 80px
+  padding-bottom: 100px
+  .contact_container_name
+    text-align: center
+    max-width: 465px
+    margin: 0 auto
+    .contact_name
+      padding-bottom: 35px
+    .contact_text
+      color: $text
+      font-family: "OpenSans", sans-serif
+      font-size: 14px
+      font-weight: 400
+      line-height: 25px
+      padding-bottom: 45px
+  .contact_items
+    display: flex
+    justify-content: space-between
+    max-width: 969px
+    flex-wrap: wrap
+    .contact_item
+      width: 287px
+      margin: 10px 5px 0
+      .contact_item_icon
+        position: relative
+        max-height: 145px
+        .item_icon
+          position: absolute
+          top: 50%
+          left: 50%
+          transform: translate(-50%, -50%)
+      .contact_item_text
+        background-color: white
+        display: flex
+        flex-direction: column
+        align-items: center
+        padding: 25px
+        .text_name
+          color: #464646
+          font-family: "OpenSans", sans-serif
+          font-size: 16px
+          font-weight: 400
+          line-height: 20px
+          text-transform: uppercase
+          padding-bottom: 5px
+        .text_information
+          text-decoration: none
+          color: $text
+          font-family: "OpenSans", sans-serif
+          font-size: 14px
+          font-weight: 400
+          line-height: 20px
+          text-transform: uppercase
+          text-align: center
+          transition: color .25s
+          &:hover
+            color: $green
+.form_wrapper
+  background-color: white
+  .contact_form
+    display: flex
+    max-width: 940px
+    flex-wrap: wrap
+    justify-content: space-between
+    padding-top: 80px
+    padding-bottom: 100px
+    &_name, &_email, &_sub
+      width: 290px
+      color: darkgray
+      font-family: "OpenSans", sans-serif
+      font-size: 14px
+      font-weight: 400
+      text-indent: 20px
+      padding: 15px 5px
+      line-height: 14px
+      text-transform: capitalize
+      //margin-bottom: 30px
+      border: 1px solid #d8dce0
+      outline: none
+      //margin: 0 5px
+      margin: 0 2px 30px
+      &::placeholder
+        color: darkgrey
+    &_text
+      width: 100%
+      height: 190px
+      resize: none
+      color: darkgrey
+      margin-bottom: 30px
+      outline: none
+      font-family: "OpenSans", sans-serif
+      font-size: 14px
+      font-weight: 400
+      text-indent: 20px
+      line-height: 14px
+      padding: 15px 0
+      border: 1px solid #d8dce0
+    &_btn
+      width: 100%
+      color: white
+      font-family: "OpenSans", sans-serif
+      font-size: 16px
+      font-weight: 400
+      background-color: $green
+      border: none
+      padding: 20px 0
+      text-transform: uppercase
+      line-height: 16px
+      outline: none
+      transition: all .25s
+      &:hover
+        box-shadow: 0 0 0 2px $green inset, 0 0 0 4px white inset
+        border-radius: 3px
+
+// -------------------- footer --------------------
+.footer_wrapper
+  .footer_container
+    display: flex
+    flex-direction: column
+    text-align: center
+    padding-top: 80px
+    padding-bottom: 90px
+    .footer_name
+      padding-bottom: 25px
+      color: #323a45
+      font-size: 25px
+      font-weight: 400
+      line-height: 12px
+      text-transform: uppercase
+      font-family: "BigJohn", sans-serif
+    .footer_text
+      padding-bottom: 40px
+      color: $text
+      font-family: "OpenSans", sans-serif
+      font-size: 14px
+      font-weight: 400
+      line-height: 14px
+    .footer_items
+      display: flex
+      margin: 0 auto
+      width: 180px
+      justify-content: space-between
+      cursor: pointer
+      .footer_item
+        width: 30px
+        height: 30px
+        border-radius: 50%
+        display: flex
+        align-items: center
+        justify-content: center
+        transition: all .25s
+        &:nth-child(1)
+          background-color: #3b5998
+        &:nth-child(2)
+          background-color: #26a6d1
+        &:nth-child(3)
+          background-color: #0e76a8
+        &:nth-child(4)
+          background-color: #3f729b
+        &:nth-child(5)
+          background-color: #86c9ef
+        &:hover
+          transform: scale(1.1)
+
+// -------------------- scroll up --------------------
+.scrollup
+  width: 40px
+  height: 40px
+  opacity: 0.3
+  position: fixed
+  bottom: 50px
+  right: 20px
+  display: none
+  text-indent: -9999px
+  background: url('../img/icon_top.png') no-repeat
 
 @import "media" // Всегда в конце
