@@ -4,8 +4,6 @@
 	<img src="http://4.bp.blogspot.com/-cbJwMFZQkP0/VlLva-AtPFI/AAAAAAAAA0M/ShnxDDLujqE/s1600/hd-wallpapers-desktop%2B%252812%2529.jpg">
 </p>
 
-<p>Автор: <a href="http://portfolio.pool-school.kiev.ua/" target="_blank">Евгений Шитый</a>
-
 <p>Оптимизированным HTML5 шаблон для Google PageSpeed ​​с использованием Bootstrap (сетка), Gulp, Sass, Browsersync, Autoprefixer, Clean-CSS, Uglify, Vinyl-FTP, Bower и поддержки Bourbon. Шаблон содержит файл <strong>.htaccess</strong> с правилами кэширования для веб-сервера.</p>
 
 <p>Кроссбраузерная совместимость: IE9 +.</p>
@@ -15,7 +13,6 @@
 <h2>Как использовать HTML шаблон</h2>
 
 <ol>
-	<li><a href="https://github.com/Jenya476/start_template.git">Скачать</a> <strong>start-template</strong> с GitHub;</li>
 	<li>Установить Node Modules: <strong>npm i</strong>;</li>
 	<li>Запустить шаблон: <strong>gulp</strong>.</li>
 </ol>
