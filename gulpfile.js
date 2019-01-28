@@ -33,6 +33,7 @@ gulp.task('scripts', function() {
 		'app/libs/swiper/swiper.min.js',
 		// 'app/libs/isotope.pkgd.min.js',
 		'app/libs/masonry.pkgd.min.js',
+		'app/libs/WoWAnimation/wow.min.js',
 		// 'app/libs/materialize-src/js/bin/materialize.min.js',
 		'app/js/common.js', // Всегда в конце
 		])

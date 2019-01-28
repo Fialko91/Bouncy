@@ -19,7 +19,14 @@ $(function() {
     });
 
 //     portfolio
-    $("#container").mixItUp({});
+    $("#container").mixItUp({
+        animation: {
+            effects: 'fade scale(0.01)',
+            duration: 563,
+            nudge: false,
+            reverseOut: false
+        }
+    });
 
 //      team
     $(".slick_container, .reviews_container").slick({
@@ -80,4 +87,19 @@ $(function() {
             clickable: true,
             autoHeight: true
         },
+        mousewheel: {
+            invert: true
+        }
     });
+//  WoWAnimation
+    wow = new WOW(
+        {
+            boxClass:     'wow',      // default
+            animateClass: 'animated', // default
+            offset:       0,          // default
+            mobile:       true,       // default
+            live:         true        // default
+        }
+    );
+
+    new WOW().init();
